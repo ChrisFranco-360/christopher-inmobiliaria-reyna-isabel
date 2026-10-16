@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raíces Reyna Isabel</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     alt="Logo de Bienes Raíces Reyna Isabel"
     class="logo"
 >
-        <h1>Bienes Raíces Reyna Isabel</h1>
+        <!--<h1>Bienes Raíces Reyna Isabel</h1> -->
+        <h1 data-aos="fade-up">Bienes Raíces Reyna Isabel</h1>
         <p>San Luis Potosí</p>
 
         <nav>
@@ -32,17 +34,29 @@
             <a href="propiedades.html" class="boton">
                  Explorar propiedades
              </a>
-</section>
+        </section>
         <section id="quienes-somos">
-            <h2>Quiénes somos</h2>
-            <p>
+            <!--<h2>Quiénes somos</h2> -->
+            <h2 data-aos="fade-up">Quiénes somos</h2>
+            <p data-aos="fade-up"> <!-- Quitar el data aos y solo dejar <p> para quitar efecto -->
                En Bienes Raíces Reyna Isabel te acompañamos en la
                compra, venta y renta de propiedades en San Luis Potosí.
             </p>
-            <p>
+            <p data-aos="fade-up"> <!-- Quitar el data aos y solo dejar <p> para quitar efecto -->
                 Te ayudamos a conocer las opciones disponibles y 
                 encontrar una propiedad que se ajuste a tus necesidades.
             </p>
+        </section>
+        <section id="acompanantes">
+            <p>¿Cuántos acompañantes llevarías a tu visita?</p>
+
+            <h2 id="contador">0</h2>
+
+            <button id="agregar-acompanante"
+            type="button"
+            class="boton boton-contacto">
+             Agregar acompañante
+            </button>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
@@ -55,10 +69,21 @@
                  Contactar por WhatsApp
             </a>
         </section>
-        <footer>
+    </main>
+    <footer>
             <p>&copy; 2026 Bienes Raíces Reyna Isabel</p>
             <p>San Luis Potosí, México</p>
             <a href="#inicio">Volver al inicio</a>
-        </footer>
-    </main>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true
+        });
+    </script>
+
+    <script src="script.js"></script>
 </body>
+</html>
