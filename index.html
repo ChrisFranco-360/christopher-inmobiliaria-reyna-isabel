@@ -2,9 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Bienes Raíces Reyna Isabel</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Animaciones AOS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Nuestros estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,11 +32,47 @@
         <h1 data-aos="fade-up">Bienes Raíces Reyna Isabel</h1>
         <p>San Luis Potosí</p>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#quienes-somos">Quiénes somos</a>
-            <a href="propiedades.html">Propiedades</a>
-            <a href="#contacto">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Mostrar navegación">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="menuPrincipal">
+
+                <div class="navbar-nav">
+
+                    <a class="nav-link" href="#inicio">
+                        Inicio
+                    </a>
+
+                    <a class="nav-link" href="#quienes-somos">
+                        Quiénes somos
+                    </a>
+
+                    <a class="nav-link" href="propiedades.html">
+                        Propiedades
+                    </a>
+
+                    <a class="nav-link" href="#contacto">
+                        Contacto
+                    </a>
+
+                    </div>
+            </div>
+
+            </div>
         </nav>
     </header>
 
@@ -75,15 +125,22 @@
             <p>San Luis Potosí, México</p>
             <a href="#inicio">Volver al inicio</a>
     </footer>
+   <!-- JavaScript de Bootstrap -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript de AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init({
-            duration: 600,
-            once: true
-        });
+    AOS.init({
+        duration: 600,
+        once: true
+    });
     </script>
 
+    <!-- Nuestro JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
